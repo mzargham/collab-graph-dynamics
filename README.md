@@ -44,7 +44,3 @@ This command will run the tests defined in `test_graph.jl`, outputting the resul
 ## Contributing
 
 We welcome contributions to this project! Whether you're interested in adding new features, improving the simulation dynamics, or fixing bugs, your input is valuable. Please feel free to fork the repository, make your changes, and submit a pull request.
-
----
-
-This README provides a starting point for documenting your project. As your simulation grows in complexity and scope, you should update this document to reflect new functionalities, dependencies, and instructions for users and contributors.
