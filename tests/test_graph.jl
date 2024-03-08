@@ -26,7 +26,7 @@ include("../src/graph.jl")  # Adjust the path if necessary
         # Assuming IDs for actor, artifact, and collection are 1, 2, and 3 respectively
         add_artifact_collection_edge!(graph, 2, 3)  # Default to suggested
         edge_id = find_edge(graph, 2, 3)
-        @test edge_id != nothing  # Edge exists
+        @test edge_id !== nothing  # Edge exists
         @test MetaGraphs.get_prop(graph, edge_id, :status) == :suggested
 
         # Update the edge status to approved
