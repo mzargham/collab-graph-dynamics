@@ -11,12 +11,12 @@ The project is structured into several key files and directories:
 - [x] `README.md` - This file, explaining the project, how to get started, and how to contribute.
 - [ ] `demo.ipynb` - This file show how the various pieces fit together to produce simulations and results
 - [ ]`src/`
-  - [x] `graph.jl` - Defines the basic data structures for nodes and edges using LightGraphs.jl, establishing the state of the model.
+  - [ ] `graph.jl` - Defines the basic data structures for nodes and edges using LightGraphs.jl, establishing the state of the model.
   - [ ] `dynamics.jl` - (Planned) Will define the dynamics of the simulation, detailing how nodes and edges evolve over time.
   - [ ] `simulation.jl` - (Planned) Will use the state defined in `graph.jl` and the dynamics in `dynamics.jl` to run the simulation.
   - [ ] `visualize.jl` - (Planned) Will provide functionality for visualizing the state and evolution of the graph over time.
 - [ ] `tests/` - Contains test files for verifying the functionality and integrity of the simulation components.
-  - [x] `test_graph.jl` - Tests for `graph.jl`, ensuring that nodes and edges are correctly created and manipulated. (Implemented)
+  - [ ] `test_graph.jl` - Tests for `graph.jl`, ensuring that nodes and edges are correctly created and manipulated. (Implemented)
 
 Note: Currently, only `graph.jl` and its associated tests (`test_graph.jl`) have been implemented. The remaining files are planned for future development.
 

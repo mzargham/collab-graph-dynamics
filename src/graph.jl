@@ -1,5 +1,9 @@
+# Refactored code to use both SimpleGraph and MetaGraph functionalities
 using LightGraphs
 using MetaGraphs
+
+import LightGraphs.SimpleGraphs: add_vertex!, add_edge!
+import MetaGraphs: add_vertex!, add_edge!, set_props!, set_prop!, find_edge
 
 abstract type Node end
 
@@ -26,7 +30,13 @@ struct ArtifactCollectionEdge
     status::Symbol  # :suggested or :approved
 end
 
-# Graph initialization
+# Custom add_vertex! method for MetaDiGraph that behaves like SimpleDiGraph's add_vertex!
+function add_vertex!(graph::MetaDiGraph)
+    v = add_vertex(graph)
+    return v
+end
+
+# Graph initialization using MetaDiGraph
 function initialize_graph()
     graph = MetaDiGraph()
     return graph
